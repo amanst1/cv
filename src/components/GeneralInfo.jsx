@@ -7,6 +7,7 @@ export default function GeneralInfo() {
 
     return(
         <div>
+            <h3>General Information</h3>
             <form action="">
                <label htmlFor="name">Name: </label> 
                <input id="name" name="name" type="text" value={name} onChange={(e) => setName(e.target.value)}/> <br/>
