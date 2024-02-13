@@ -10,7 +10,7 @@ export default function Experience({ isSubmitted }) {
 
     return(
         <div>
-            <h3>Work Experience</h3>
+            <h2>Work Experience</h2>
             { !isSubmitted ? 
             (<form>
                <label htmlFor="company">Company: </label> 

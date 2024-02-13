@@ -8,7 +8,7 @@ export default function Education({ isSubmitted }) {
 
     return(
         <div>
-            <h3>Educational Experience</h3>
+            <h2>Educational Experience</h2>
             { !isSubmitted ?
             (<form >
                <label htmlFor="school">School: </label> 

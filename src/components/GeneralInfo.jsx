@@ -8,7 +8,7 @@ export default function GeneralInfo({isSubmitted}) {
 
     return(
         <div>
-            <h3>General Information</h3>
+            <h2>General Information</h2>
             {!isSubmitted ? 
             (<form >
                <label htmlFor="name">Name: </label> 
