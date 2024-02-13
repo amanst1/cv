@@ -5,12 +5,15 @@ import Education from './components/Education'
 import Experience from './components/Experience'
 
 function App() {
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   return (
     <>
-      <GeneralInfo/>
-      <Education/>
-      <Experience/>
+      <GeneralInfo isSubmitted={isSubmitted}/>
+      <Education isSubmitted={isSubmitted}/>
+      <Experience isSubmitted={isSubmitted}/>
+      <br/>
+      <button onClick={()=>setIsSubmitted(!isSubmitted)} > {isSubmitted ? "Edit": "Submit"} </button>
     </>
   )
 }
