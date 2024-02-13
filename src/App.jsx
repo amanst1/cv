@@ -9,9 +9,11 @@ function App() {
 
   return (
     <>
+      <h1> Curriculum Vitae</h1>
       <GeneralInfo isSubmitted={isSubmitted}/>
       <Education isSubmitted={isSubmitted}/>
       <Experience isSubmitted={isSubmitted}/>
+
       <br/>
       <button onClick={()=>setIsSubmitted(!isSubmitted)} > {isSubmitted ? "Edit": "Submit"} </button>
     </>
